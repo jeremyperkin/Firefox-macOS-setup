@@ -116,7 +116,7 @@ regexp(".*\\.(p|P)(d|D)(f|F).*") {
     --in-content-box-background-hover: var(--accent-1)!important;
     --in-content-box-background-active: var(--accent-1)!important;
     --in-content-box-border-color: var(--tone-5)!important;
-    --in-content-item-hover: var(--accent-1); !important;
+    --in-content-item-hover: var(--accent-1) !important;
     --in-content-item-selected: var(--accent-1)!important;
     --in-content-border-highlight: var(--accent-1)!important;
     --in-content-border-focus: var(--accent-1)!important;
@@ -282,7 +282,7 @@ screen and (-moz-os-version:windows-win10) {
   menupopup#tabContextMenu > menu > menupopup > .popup-internal-box,
   menupopup#toolbar-context-menu {
     padding-left: 2px!important;
-    padding-right: 2px!important
+    padding-right: 2px!important;
     opacity: 0.8 !important;
   }
   menupopup,
@@ -1469,10 +1469,9 @@ toolbar toolbarbutton {
 
 #Personal-bookmarks, .bookmark-item {   /* Bookmarks toolbar and effects to bookmark menu bar */
 background: var(--almost-black) !important;     
-height: 30px !important
+height: 30px !important;
 margin-top: -1px !important;
 margin-bottom: -2px !important;
-margin-border-top: var(--almost-black) !important;
 }
 
 /* Remove empty space before first tab
@@ -1483,9 +1482,7 @@ Delete this rule if you need a space to drag the window*/
 {
 display: none !important;
 }
-
-display: none !important;
-}.toolbarbutton-1 {
+.toolbarbutton-1 {
   --toolbarbutton-hover-background: var(--accent-1) !important;
   --toolbarbutton-active-background: var(--grey-60) !important;
   color: var(--white) !important;
@@ -1496,7 +1493,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-font-smoothing: subpixel-antialiased;
-  font-smoothing: antialiased;
+  font-synthesis: antialiased;
 /**    font-weight: 400;       */
   ;
 }
@@ -1550,7 +1547,7 @@ toolbarbutton#alltabs-button {
 /* BORDERLESS*/
 #browser-border-end, #browser-border-start {
 background: transparent !important;
-border-left: 0px solid var(--main-page-border-color)!important;`
+border-left: 0px solid var(--main-page-border-color)!important;
 }
 
 /* SIDE BAR HIGHLIGHTING */
@@ -1600,17 +1597,9 @@ border-left: 0px solid var(--main-page-border-color)!important;`
 #pageActionButton,
 #pocket-button-box,
 ar-button,
-.autocomplete-history-dropmarker,
-{
-  display: none !important;
-}
+.autocomplete-history-dropmarker {
+  display: none !important }
 .panel-arrow {
   fill: var(--almost-black) !important;
 }
-#urlbar{
-  background: transparent !important;
-  border: none !important;
-}
---toolbarbutton-icon-fill-attention{
-  background-color: var(--almost-black) !important;
 }
